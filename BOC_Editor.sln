@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BOC_Editor", "BOC_Editor.csproj", "{776785A7-3BED-4452-A420-636E2AAD5C0B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apos.Gui", "..\Apos.Gui\Source\Apos.Gui.csproj", "{1B7B207A-87C3-44AD-9930-F31F0C2EC44C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koko.Gui", "..\Koko.Gui\Koko.Gui.csproj", "{F44BBE0E-EB3B-4DFB-9C42-6B6E7467B9F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{776785A7-3BED-4452-A420-636E2AAD5C0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{776785A7-3BED-4452-A420-636E2AAD5C0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{776785A7-3BED-4452-A420-636E2AAD5C0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{776785A7-3BED-4452-A420-636E2AAD5C0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B7B207A-87C3-44AD-9930-F31F0C2EC44C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B7B207A-87C3-44AD-9930-F31F0C2EC44C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B7B207A-87C3-44AD-9930-F31F0C2EC44C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B7B207A-87C3-44AD-9930-F31F0C2EC44C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F44BBE0E-EB3B-4DFB-9C42-6B6E7467B9F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F44BBE0E-EB3B-4DFB-9C42-6B6E7467B9F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F44BBE0E-EB3B-4DFB-9C42-6B6E7467B9F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F44BBE0E-EB3B-4DFB-9C42-6B6E7467B9F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B825775-8AEF-467E-A7C8-B3B404C28F16}
+	EndGlobalSection
+EndGlobal
