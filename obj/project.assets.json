@@ -203,7 +203,7 @@
           "bin/placeholder/Apos.Gui.dll": {}
         }
       },
-      "Koko.Gui/1.0.0": {
+      "Koko.RunTimeGui/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -212,10 +212,10 @@
           "MonoGame.Framework.DesktopGL": "3.8.0.1641"
         },
         "compile": {
-          "bin/placeholder/Koko.Gui.dll": {}
+          "bin/placeholder/Koko.RunTimeGui.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Koko.Gui.dll": {}
+          "bin/placeholder/Koko.RunTimeGui.dll": {}
         }
       }
     }
@@ -490,17 +490,17 @@
       "path": "../Apos.Gui/Source/Apos.Gui.csproj",
       "msbuildProject": "../Apos.Gui/Source/Apos.Gui.csproj"
     },
-    "Koko.Gui/1.0.0": {
+    "Koko.RunTimeGui/1.0.0": {
       "type": "project",
-      "path": "../Koko.Gui/Koko.Gui.csproj",
-      "msbuildProject": "../Koko.Gui/Koko.Gui.csproj"
+      "path": "../Koko.RunTimeGui/Koko.RunTimeGui.csproj",
+      "msbuildProject": "../Koko.RunTimeGui/Koko.RunTimeGui.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Apos.Gui >= 1.0.0",
       "FontStashSharp.MonoGame >= 1.0.4",
-      "Koko.Gui >= 1.0.0",
+      "Koko.RunTimeGui >= 1.0.0",
       "MonoGame.Content.Builder.Task >= 3.8.0.1641",
       "MonoGame.Extended >= 3.8.0",
       "MonoGame.Framework.DesktopGL >= 3.8.0.1641"
@@ -541,8 +541,8 @@
             "C:\\Users\\mnnop\\Documents\\BOC\\Apos.Gui\\Source\\Apos.Gui.csproj": {
               "projectPath": "C:\\Users\\mnnop\\Documents\\BOC\\Apos.Gui\\Source\\Apos.Gui.csproj"
             },
-            "C:\\Users\\mnnop\\Documents\\BOC\\Koko.Gui\\Koko.Gui.csproj": {
-              "projectPath": "C:\\Users\\mnnop\\Documents\\BOC\\Koko.Gui\\Koko.Gui.csproj"
+            "C:\\Users\\mnnop\\Documents\\BOC\\Koko.RunTimeGui\\Koko.RunTimeGui.csproj": {
+              "projectPath": "C:\\Users\\mnnop\\Documents\\BOC\\Koko.RunTimeGui\\Koko.RunTimeGui.csproj"
             }
           }
         }

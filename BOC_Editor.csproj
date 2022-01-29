@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -31,6 +31,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Apos.Gui\Source\Apos.Gui.csproj" />
-    <ProjectReference Include="..\Koko.Gui\Koko.Gui.csproj" />
+    <ProjectReference Include="..\Koko.RunTimeGui\Koko.RunTimeGui.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Generated\" />
   </ItemGroup>
 </Project>

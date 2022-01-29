@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Gui> 
+  <Panel>
+    <Label>My Label</Label>
+    <Button>My Button</Button>
+  </Panel>
+</Gui>

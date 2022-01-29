@@ -1,8 +1,8 @@
-C:\Users\mnnop\Documents\BOC\BOC_Editor\obj\Debug\netcoreapp3.1\BOC_Editor.csproj.AssemblyReference.cache
 C:\Users\mnnop\Documents\BOC\BOC_Editor\obj\Debug\netcoreapp3.1\BOC_Editor.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\mnnop\Documents\BOC\BOC_Editor\obj\Debug\netcoreapp3.1\BOC_Editor.AssemblyInfoInputs.cache
 C:\Users\mnnop\Documents\BOC\BOC_Editor\obj\Debug\netcoreapp3.1\BOC_Editor.AssemblyInfo.cs
 C:\Users\mnnop\Documents\BOC\BOC_Editor\obj\Debug\netcoreapp3.1\BOC_Editor.csproj.CoreCompileInputs.cache
+C:\Users\mnnop\Documents\BOC\BOC_Editor\obj\Debug\netcoreapp3.1\BOC_Editor.csproj.AssemblyReference.cache
 C:\Users\mnnop\Documents\BOC\BOC_Editor\bin\Debug\netcoreapp3.1\Content\font-file.ttf
 C:\Users\mnnop\Documents\BOC\BOC_Editor\bin\Debug\netcoreapp3.1\BOC_Editor.exe
 C:\Users\mnnop\Documents\BOC\BOC_Editor\bin\Debug\netcoreapp3.1\BOC_Editor.deps.json
@@ -27,11 +27,11 @@ C:\Users\mnnop\Documents\BOC\BOC_Editor\bin\Debug\netcoreapp3.1\runtimes\win-x64
 C:\Users\mnnop\Documents\BOC\BOC_Editor\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\SDL2.dll
 C:\Users\mnnop\Documents\BOC\BOC_Editor\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\soft_oal.dll
 C:\Users\mnnop\Documents\BOC\BOC_Editor\bin\Debug\netcoreapp3.1\Apos.Gui.dll
+C:\Users\mnnop\Documents\BOC\BOC_Editor\bin\Debug\netcoreapp3.1\Koko.RunTimeGui.dll
 C:\Users\mnnop\Documents\BOC\BOC_Editor\bin\Debug\netcoreapp3.1\Apos.Gui.pdb
 C:\Users\mnnop\Documents\BOC\BOC_Editor\bin\Debug\netcoreapp3.1\Apos.Gui.xml
+C:\Users\mnnop\Documents\BOC\BOC_Editor\bin\Debug\netcoreapp3.1\Koko.RunTimeGui.pdb
 C:\Users\mnnop\Documents\BOC\BOC_Editor\obj\Debug\netcoreapp3.1\BOC_Editor.csproj.CopyComplete
 C:\Users\mnnop\Documents\BOC\BOC_Editor\obj\Debug\netcoreapp3.1\BOC_Editor.dll
 C:\Users\mnnop\Documents\BOC\BOC_Editor\obj\Debug\netcoreapp3.1\BOC_Editor.pdb
 C:\Users\mnnop\Documents\BOC\BOC_Editor\obj\Debug\netcoreapp3.1\BOC_Editor.genruntimeconfig.cache
-C:\Users\mnnop\Documents\BOC\BOC_Editor\bin\Debug\netcoreapp3.1\Koko.Gui.dll
-C:\Users\mnnop\Documents\BOC\BOC_Editor\bin\Debug\netcoreapp3.1\Koko.Gui.pdb

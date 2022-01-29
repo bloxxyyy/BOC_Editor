@@ -25,7 +25,12 @@
       "ProjectGuid": "f44bbe0e-eb3b-4dfb-9c42-6b6e7467b9f0",
       "DisplayName": "Koko.Gui",
       "ColorIndex": 3
+    },
+    "39599c63-c98d-4f53-baa9-009787a403a2": {
+      "ProjectGuid": "39599c63-c98d-4f53-baa9-009787a403a2",
+      "DisplayName": "Koko.RunTimeGui",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }
