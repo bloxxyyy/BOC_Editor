@@ -33,7 +33,4 @@
     <ProjectReference Include="..\Apos.Gui\Source\Apos.Gui.csproj" />
     <ProjectReference Include="..\Koko.RunTimeGui\Koko.RunTimeGui.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Generated\" />
-  </ItemGroup>
 </Project>

@@ -1,4 +1,5 @@
-﻿using Koko.RunTimeGui;
+﻿using BOC_Editor.GenerationInitialization;
+using Koko.RunTimeGui;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended;
@@ -34,23 +35,8 @@ namespace BOC_Editor {
 
 			FontHelper.Add(Content.RootDirectory);
 
-			var panel = new Panel();
-			var label = new Label();
-			var label2 = new Label();
-
-			panel.ChildComponents.Add(label);
-			panel.ChildComponents.Add(label2);
-			Gui.ChildComponents.Add(panel);
-
-			var panel2 = new Panel();
-			var button = new Button();
-			var label3 = new Label();
-
-			panel2.ChildComponents.Add(button);
-			panel2.ChildComponents.Add(label3);
-			Gui.ChildComponents.Add(panel2);
-
-			Gui.Init();
+			Initializer.Init(); // generate all the files into the gui
+			Gui.Init(); // call the init on all the generated items
 
 			base.Initialize();
 		}

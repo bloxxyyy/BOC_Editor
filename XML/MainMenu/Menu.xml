@@ -4,5 +4,6 @@
   <Panel>
     <Label>My Label</Label>
     <Button>My Button</Button>
+    <Button>My Button2</Button>
   </Panel>
 </Gui>
