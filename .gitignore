@@ -1,0 +1,10 @@
+# Visual Studio
+.vs/
+
+# Build output
+obj/
+bin/
+
+# Generated output
+Generated/
+XML/
