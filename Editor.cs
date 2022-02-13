@@ -62,7 +62,7 @@ namespace BOC_Editor {
 
 			_spriteBatch.End();
 
-			_spriteBatch.Begin(samplerState: SamplerState.LinearClamp, transformMatrix: view);
+			_spriteBatch.Begin(samplerState: SamplerState.LinearClamp, blendState: BlendState.NonPremultiplied, transformMatrix: view);
 
 			Gui.Draw(_spriteBatch);
 

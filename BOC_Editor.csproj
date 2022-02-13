@@ -31,6 +31,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Apos.Gui\Source\Apos.Gui.csproj" />
-    <ProjectReference Include="..\Koko.RunTimeGui\Koko.RunTimeGui.csproj" />
+    <ProjectReference Include="..\BOC_Editor_GUI_System\Koko.RunTimeGui.csproj" />
   </ItemGroup>
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="dotnet script ..\BOC_Editor_GUI_System\Generation\Generator.csx" />
+  </Target>
 </Project>
