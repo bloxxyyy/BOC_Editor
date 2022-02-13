@@ -13,6 +13,16 @@ namespace BOC_Editor.GenerationInitialization {
 		/// </summary>
 		public static string generatedFilesLocation = Environment.CurrentDirectory + "\\..\\..\\..\\Generated";
 
+		public void ButtonData() {
+
+			var list = new Dictionary<string, Func<string>> {
+				{ "funButton1", () => { var i = "test"; return i; } },
+				{ "ButtonName2", () => { return "2"; } }
+			};
+
+			// TODO IMPLEMENT
+			// Tag moment
+		}
 
 		public static void Init() {
 			if (Directory.Exists(generatedFilesLocation)) {
@@ -26,7 +36,7 @@ namespace BOC_Editor.GenerationInitialization {
 		/// <param name="targetDirectory"></param>
 		private static void ProcessDirectory(string targetDirectory) {
 			foreach (string file in Directory.EnumerateFiles(targetDirectory, "*.cs", SearchOption.AllDirectories)) {
-				var name = System.IO.Path.GetFileNameWithoutExtension(file);
+				var name = Path.GetFileNameWithoutExtension(file);
 				name = name.Replace(" ", "_");
 				var type = Type.GetType("Koko.Generated."+name);
 				var instance = Activator.CreateInstance(type) as IInitable;
