@@ -11,7 +11,7 @@ namespace BOC_Editor.GenerationInitialization {
 		/// <summary>
 		///  The file location where your generated files are stored.
 		/// </summary>
-		public static string generatedFilesLocation = "C:\\Users\\mnnop\\Documents\\BOC\\BOC_Editor\\Generated";
+		public static string generatedFilesLocation = Environment.CurrentDirectory + "\\..\\..\\..\\Generated";
 
 
 		public static void Init() {
