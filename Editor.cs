@@ -1,4 +1,5 @@
-﻿using BOC_Editor.GenerationInitialization;
+﻿using Apos.Input;
+using BOC_Editor.GenerationInitialization;
 using Koko.RunTimeGui;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -49,8 +50,10 @@ namespace BOC_Editor {
 		}
 
 		protected override void Update(GameTime gameTime) {
+			//InputHelper.UpdateSetup();
 			Gui.Update();
 			base.Update(gameTime);
+			//InputHelper.UpdateCleanup();
 		}
 
 		protected override void Draw(GameTime gameTime) {

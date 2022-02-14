@@ -3,6 +3,8 @@ using Koko.RunTimeGui.Gui.Initable_Components;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Reflection;
 using System.Text;
 
 namespace BOC_Editor.GenerationInitialization {
@@ -25,23 +27,9 @@ namespace BOC_Editor.GenerationInitialization {
 		}
 
 		public static void Init() {
-			if (Directory.Exists(generatedFilesLocation)) {
-				ProcessDirectory(generatedFilesLocation);
-			}
-		}
-
-		/// <summary>
-		/// To check for all xml files in directory plus sub directories.
-		/// </summary>
-		/// <param name="targetDirectory"></param>
-		private static void ProcessDirectory(string targetDirectory) {
-			foreach (string file in Directory.EnumerateFiles(targetDirectory, "*.cs", SearchOption.AllDirectories)) {
-				var name = Path.GetFileNameWithoutExtension(file);
-				name = name.Replace(" ", "_");
-				var type = Type.GetType("Koko.Generated."+name);
-				var instance = Activator.CreateInstance(type) as IInitable;
-				instance.Init();
-			}
+			Assembly.GetExecutingAssembly().GetTypes()
+				.Where(t => t.Namespace == "Koko.Generated").ToList()
+				.ForEach(a => (Activator.CreateInstance(a) as IInitable).Init());
 		}
 	}
 }
