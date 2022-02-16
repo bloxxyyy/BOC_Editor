@@ -29,12 +29,13 @@ namespace BOC_Editor {
 
 		protected override void Initialize() {
 			_graphics.IsFullScreen = false;
-			_graphics.PreferredBackBufferWidth = GraphicsDevice.DisplayMode.Width;
-			_graphics.PreferredBackBufferHeight = GraphicsDevice.DisplayMode.Height;
+			_graphics.PreferredBackBufferWidth = 1280; // GraphicsDevice.DisplayMode.Width;
+			_graphics.PreferredBackBufferHeight = 720; // GraphicsDevice.DisplayMode.Height;
+			_graphics.SynchronizeWithVerticalRetrace = false;
 			_graphics.ApplyChanges();
 
+			this.IsFixedTimeStep = false;
 			FontHelper.Add(Content.RootDirectory);
-
 			Initializer.Init(); // generate all the files into the gui
 			Gui.GameInstance = this; // TODO ew
 			Gui.Init(); // call the init on all the generated items
@@ -43,14 +44,15 @@ namespace BOC_Editor {
 		}
 
 		protected override void LoadContent() {
-			_ViewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, 1600, 1024);
+			_ViewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, 1280, 720);
 			_Camera = new OrthographicCamera(_ViewportAdapter);
 			_spriteBatch = new SpriteBatch(GraphicsDevice);
 			GuiHelper.UICamera = _Camera;
 		}
 
-		protected override void Update(GameTime gameTime) {
-			Gui.Update();
+		protected override void Update(GameTime gameTime)
+		{
+			Gui.Update(gameTime);
 			base.Update(gameTime);
 		}
 
