@@ -1,5 +1,4 @@
-﻿using Apos.Input;
-using BOC_Editor.GenerationInitialization;
+﻿using BOC_Editor.GenerationInitialization;
 using Koko.RunTimeGui;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -37,6 +36,7 @@ namespace BOC_Editor {
 			FontHelper.Add(Content.RootDirectory);
 
 			Initializer.Init(); // generate all the files into the gui
+			Gui.GameInstance = this; // TODO ew
 			Gui.Init(); // call the init on all the generated items
 
 			base.Initialize();
@@ -45,15 +45,13 @@ namespace BOC_Editor {
 		protected override void LoadContent() {
 			_ViewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, 1600, 1024);
 			_Camera = new OrthographicCamera(_ViewportAdapter);
-
 			_spriteBatch = new SpriteBatch(GraphicsDevice);
+			GuiHelper.UICamera = _Camera;
 		}
 
 		protected override void Update(GameTime gameTime) {
-			//InputHelper.UpdateSetup();
 			Gui.Update();
 			base.Update(gameTime);
-			//InputHelper.UpdateCleanup();
 		}
 
 		protected override void Draw(GameTime gameTime) {
@@ -61,14 +59,12 @@ namespace BOC_Editor {
 
 			var view = _Camera.GetViewMatrix();
 
-			_spriteBatch.Begin(samplerState: SamplerState.PointClamp, blendState: BlendState.AlphaBlend, transformMatrix: view);
-
-			_spriteBatch.End();
+			//_spriteBatch.Begin(samplerState: SamplerState.PointClamp, blendState: BlendState.AlphaBlend, transformMatrix: view);
+			// game logic
+			//_spriteBatch.End();
 
 			_spriteBatch.Begin(samplerState: SamplerState.LinearClamp, blendState: BlendState.NonPremultiplied, transformMatrix: view);
-
 			Gui.Draw(_spriteBatch);
-
 			_spriteBatch.End();
 
 			base.Draw(gameTime);
