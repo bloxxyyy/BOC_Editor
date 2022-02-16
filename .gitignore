@@ -6,5 +6,7 @@ obj/
 bin/
 
 # Generated output
-Generated/
-XML/
+Generated/*
+!Generated/.gitkeep
+XML/*
+!XML/.gitkeep
