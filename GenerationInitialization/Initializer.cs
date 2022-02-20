@@ -1,4 +1,5 @@
-﻿using Koko.RunTimeGui.Gui.Initable_Components;
+﻿using Koko.Generated;
+using Koko.RunTimeGui.Gui.Initable_Components;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,6 @@ namespace BOC_Editor.GenerationInitialization {
 		/// <summary>
 		///  The file location where your generated files are stored.
 		/// </summary>
-		public static string generatedFilesLocation = Environment.CurrentDirectory + "\\..\\..\\..\\Generated";
 
 		public void ButtonData() {
 
@@ -24,7 +24,9 @@ namespace BOC_Editor.GenerationInitialization {
 		}
 
 		public static void Init() {
-			Assembly.GetExecutingAssembly().GetTypes()
+			AppDomain currentDomain = AppDomain.CurrentDomain;
+			var rtg = currentDomain.GetAssemblies().FirstOrDefault(a => a.GetName().Name == "Koko.RunTimeGui");
+			rtg.GetTypes()
 				.Where(t => t.Namespace == "Koko.Generated").ToList()
 				.ForEach(a => (Activator.CreateInstance(a) as IInitable).Init());
 		}
