@@ -36,7 +36,7 @@ namespace BOC_Editor {
 			this.IsFixedTimeStep = false;
 			FontHelper.Add(Content.RootDirectory);
 			Initializer.Init(); // generate all the files into the gui
-			Gui.SetGameInstance(this); // TODO ew
+			GUI.GAME = this; // TODO ew
 			Gui.Init(); // call the init on all the generated items
 
 			base.Initialize();
