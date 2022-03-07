@@ -4,15 +4,14 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended;
 using MonoGame.Extended.ViewportAdapters;
+using System.Collections.Generic;
 
 namespace BOC_Editor {
 	public class Editor : Game {
 
 		private IWindowState _CurrentState;
 
-		public static Vector2 DefaultWindowSize;
-
-		private GraphicsDeviceManager _graphics;
+		private readonly GraphicsDeviceManager _graphics;
 		private BoxingViewportAdapter _ViewportAdapter;
 		private OrthographicCamera _Camera;
 		private SpriteBatch _spriteBatch;
@@ -37,7 +36,7 @@ namespace BOC_Editor {
 			this.IsFixedTimeStep = false;
 			FontHelper.Add(Content.RootDirectory);
 			Initializer.Init(); // generate all the files into the gui
-			Gui.GameInstance = this; // TODO ew
+			GUI.GAME = this; // TODO ew
 			Gui.Init(); // call the init on all the generated items
 
 			base.Initialize();
@@ -47,7 +46,7 @@ namespace BOC_Editor {
 			_ViewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, 1280, 720);
 			_Camera = new OrthographicCamera(_ViewportAdapter);
 			_spriteBatch = new SpriteBatch(GraphicsDevice);
-			GuiHelper.UICamera = _Camera;
+			GuiHelper.SetUICamera(_Camera);
 		}
 
 		protected override void Update(GameTime gameTime)

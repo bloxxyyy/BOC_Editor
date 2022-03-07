@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net6</TargetFramework>
     <PublishReadyToRun>false</PublishReadyToRun>
     <TieredCompilation>false</TieredCompilation>
   </PropertyGroup>
@@ -33,10 +33,4 @@
     <ProjectReference Include="..\Apos.Gui\Source\Apos.Gui.csproj" />
     <ProjectReference Include="..\BOC_Editor_GUI_System\Koko.RunTimeGui.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Generated\" />
-  </ItemGroup>
-  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="dotnet script ..\BOC_Editor_GUI_System\Generation\Generator.csx" />
-  </Target>
 </Project>
